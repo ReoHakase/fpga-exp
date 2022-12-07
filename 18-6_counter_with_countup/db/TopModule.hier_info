@@ -1,0 +1,328 @@
+|TopModule
+CLK1 => comb.IN0
+CLK2 => ~NO_FANOUT~
+HEX0[0] <= m_seven_segment:comb_20.port1
+HEX0[1] <= m_seven_segment:comb_20.port1
+HEX0[2] <= m_seven_segment:comb_20.port1
+HEX0[3] <= m_seven_segment:comb_20.port1
+HEX0[4] <= m_seven_segment:comb_20.port1
+HEX0[5] <= m_seven_segment:comb_20.port1
+HEX0[6] <= m_seven_segment:comb_20.port1
+HEX0[7] <= m_seven_segment:comb_20.port1
+HEX1[0] <= m_seven_segment:comb_22.port1
+HEX1[1] <= m_seven_segment:comb_22.port1
+HEX1[2] <= m_seven_segment:comb_22.port1
+HEX1[3] <= m_seven_segment:comb_22.port1
+HEX1[4] <= m_seven_segment:comb_22.port1
+HEX1[5] <= m_seven_segment:comb_22.port1
+HEX1[6] <= m_seven_segment:comb_22.port1
+HEX1[7] <= m_seven_segment:comb_22.port1
+HEX2[0] <= m_seven_segment:comb_24.port1
+HEX2[1] <= m_seven_segment:comb_24.port1
+HEX2[2] <= m_seven_segment:comb_24.port1
+HEX2[3] <= m_seven_segment:comb_24.port1
+HEX2[4] <= m_seven_segment:comb_24.port1
+HEX2[5] <= m_seven_segment:comb_24.port1
+HEX2[6] <= m_seven_segment:comb_24.port1
+HEX2[7] <= m_seven_segment:comb_24.port1
+HEX3[0] <= m_seven_segment:comb_26.port1
+HEX3[1] <= m_seven_segment:comb_26.port1
+HEX3[2] <= m_seven_segment:comb_26.port1
+HEX3[3] <= m_seven_segment:comb_26.port1
+HEX3[4] <= m_seven_segment:comb_26.port1
+HEX3[5] <= m_seven_segment:comb_26.port1
+HEX3[6] <= m_seven_segment:comb_26.port1
+HEX3[7] <= m_seven_segment:comb_26.port1
+HEX4[0] <= m_seven_segment:comb_28.port1
+HEX4[1] <= m_seven_segment:comb_28.port1
+HEX4[2] <= m_seven_segment:comb_28.port1
+HEX4[3] <= m_seven_segment:comb_28.port1
+HEX4[4] <= m_seven_segment:comb_28.port1
+HEX4[5] <= m_seven_segment:comb_28.port1
+HEX4[6] <= m_seven_segment:comb_28.port1
+HEX4[7] <= m_seven_segment:comb_28.port1
+HEX5[0] <= m_seven_segment:comb_30.port1
+HEX5[1] <= m_seven_segment:comb_30.port1
+HEX5[2] <= m_seven_segment:comb_30.port1
+HEX5[3] <= m_seven_segment:comb_30.port1
+HEX5[4] <= m_seven_segment:comb_30.port1
+HEX5[5] <= m_seven_segment:comb_30.port1
+HEX5[6] <= m_seven_segment:comb_30.port1
+HEX5[7] <= m_seven_segment:comb_30.port1
+BTN[0] => ~NO_FANOUT~
+BTN[1] => ~NO_FANOUT~
+LED[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= <GND>
+LED[2] <= <GND>
+LED[3] <= <GND>
+LED[4] <= <GND>
+LED[5] <= <GND>
+LED[6] <= <GND>
+LED[7] <= <GND>
+LED[8] <= <GND>
+LED[9] <= <GND>
+SW[0] => LED[0].DATAIN
+SW[0] => comb.IN1
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+
+
+|TopModule|m_prescale:comb_4
+clock => count[0].CLK
+clock => count[1].CLK
+clock => count[2].CLK
+clock => count[3].CLK
+clock => count[4].CLK
+clock => count[5].CLK
+clock => count[6].CLK
+clock => count[7].CLK
+clock => count[8].CLK
+clock => count[9].CLK
+clock => count[10].CLK
+clock => count[11].CLK
+clock => count[12].CLK
+clock => count[13].CLK
+clock => count[14].CLK
+clock => count[15].CLK
+clock => count[16].CLK
+clock => count[17].CLK
+clock => count[18].CLK
+clock => count[19].CLK
+clock => count[20].CLK
+clock => count[21].CLK
+clock => count[22].CLK
+clock => count[23].CLK
+clock => count[24].CLK
+length[0] => LessThan0.IN25
+length[1] => LessThan0.IN24
+length[2] => LessThan0.IN23
+length[3] => LessThan0.IN22
+length[4] => LessThan0.IN21
+length[5] => LessThan0.IN20
+length[6] => LessThan0.IN19
+length[7] => LessThan0.IN18
+length[8] => LessThan0.IN17
+length[9] => LessThan0.IN16
+length[10] => LessThan0.IN15
+length[11] => LessThan0.IN14
+length[12] => LessThan0.IN13
+length[13] => LessThan0.IN12
+length[14] => LessThan0.IN11
+length[15] => LessThan0.IN10
+length[16] => LessThan0.IN9
+length[17] => LessThan0.IN8
+length[18] => LessThan0.IN7
+length[19] => LessThan0.IN6
+length[20] => LessThan0.IN5
+length[21] => LessThan0.IN4
+length[22] => LessThan0.IN3
+length[23] => LessThan0.IN2
+length[24] => LessThan0.IN1
+prescaled_clock <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_counter:comb_7
+ck => q[0]~reg0.CLK
+ck => q[1]~reg0.CLK
+ck => q[2]~reg0.CLK
+ck => q[3]~reg0.CLK
+ck => q[4]~reg0.CLK
+ck => q[5]~reg0.CLK
+ck => countup~reg0.CLK
+res => q[0]~reg0.ACLR
+res => q[1]~reg0.ACLR
+res => q[2]~reg0.ACLR
+res => q[3]~reg0.ACLR
+res => q[4]~reg0.ACLR
+res => q[5]~reg0.ACLR
+res => countup~reg0.ENA
+law[0] => LessThan0.IN12
+law[0] => Mod0.IN6
+law[1] => LessThan0.IN11
+law[1] => Mod0.IN5
+law[2] => LessThan0.IN10
+law[2] => Mod0.IN4
+law[3] => LessThan0.IN9
+law[3] => Mod0.IN3
+law[4] => LessThan0.IN8
+law[4] => Mod0.IN2
+law[5] => LessThan0.IN7
+law[5] => Mod0.IN1
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countup <= countup~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_counter:comb_8
+ck => q[0]~reg0.CLK
+ck => q[1]~reg0.CLK
+ck => q[2]~reg0.CLK
+ck => q[3]~reg0.CLK
+ck => q[4]~reg0.CLK
+ck => q[5]~reg0.CLK
+ck => countup~reg0.CLK
+res => q[0]~reg0.ACLR
+res => q[1]~reg0.ACLR
+res => q[2]~reg0.ACLR
+res => q[3]~reg0.ACLR
+res => q[4]~reg0.ACLR
+res => q[5]~reg0.ACLR
+res => countup~reg0.ENA
+law[0] => LessThan0.IN12
+law[0] => Mod0.IN6
+law[1] => LessThan0.IN11
+law[1] => Mod0.IN5
+law[2] => LessThan0.IN10
+law[2] => Mod0.IN4
+law[3] => LessThan0.IN9
+law[3] => Mod0.IN3
+law[4] => LessThan0.IN8
+law[4] => Mod0.IN2
+law[5] => LessThan0.IN7
+law[5] => Mod0.IN1
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countup <= countup~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_counter:comb_9
+ck => q[0]~reg0.CLK
+ck => q[1]~reg0.CLK
+ck => q[2]~reg0.CLK
+ck => q[3]~reg0.CLK
+ck => q[4]~reg0.CLK
+ck => q[5]~reg0.CLK
+ck => countup~reg0.CLK
+res => q[0]~reg0.ACLR
+res => q[1]~reg0.ACLR
+res => q[2]~reg0.ACLR
+res => q[3]~reg0.ACLR
+res => q[4]~reg0.ACLR
+res => q[5]~reg0.ACLR
+res => countup~reg0.ENA
+law[0] => LessThan0.IN12
+law[0] => Mod0.IN6
+law[1] => LessThan0.IN11
+law[1] => Mod0.IN5
+law[2] => LessThan0.IN10
+law[2] => Mod0.IN4
+law[3] => LessThan0.IN9
+law[3] => Mod0.IN3
+law[4] => LessThan0.IN8
+law[4] => Mod0.IN2
+law[5] => LessThan0.IN7
+law[5] => Mod0.IN1
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countup <= countup~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_seven_segment:comb_20
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:comb_22
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:comb_24
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:comb_26
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:comb_28
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:comb_30
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
