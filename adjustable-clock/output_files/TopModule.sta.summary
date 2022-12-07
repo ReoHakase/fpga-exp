@@ -1,0 +1,89 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'm_chattering_filter:comb_7|signal_reg'
+Slack : -4.792
+TNS   : -57.055
+
+Type  : Slow 1200mV 85C Model Setup 'CLK1'
+Slack : -3.277
+TNS   : -151.593
+
+Type  : Slow 1200mV 85C Model Hold 'm_chattering_filter:comb_7|signal_reg'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK1'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -73.150
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_chattering_filter:comb_7|signal_reg'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_prescale:comb_6|count[0]'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Setup 'm_chattering_filter:comb_7|signal_reg'
+Slack : -4.257
+TNS   : -50.390
+
+Type  : Slow 1200mV 0C Model Setup 'CLK1'
+Slack : -2.973
+TNS   : -136.526
+
+Type  : Slow 1200mV 0C Model Hold 'm_chattering_filter:comb_7|signal_reg'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK1'
+Slack : 0.555
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -73.150
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_chattering_filter:comb_7|signal_reg'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_prescale:comb_6|count[0]'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Fast 1200mV 0C Model Setup 'm_chattering_filter:comb_7|signal_reg'
+Slack : -1.526
+TNS   : -13.472
+
+Type  : Fast 1200mV 0C Model Setup 'CLK1'
+Slack : -1.059
+TNS   : -40.178
+
+Type  : Fast 1200mV 0C Model Hold 'm_chattering_filter:comb_7|signal_reg'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK1'
+Slack : 0.232
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -59.999
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_chattering_filter:comb_7|signal_reg'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_prescale:comb_6|count[0]'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------
