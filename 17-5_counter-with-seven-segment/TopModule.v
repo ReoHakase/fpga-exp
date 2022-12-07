@@ -20,7 +20,7 @@ module TopModule(
 	wire clk, res, wnq;
 	wire [3:0] wq;
 	
-	m_rs_flipflop u1(BTN[0], BTN[1], clk, wnq);	// ボタン信号からクロック信号を生成
+	m_rs_flipflop u1(~BTN[0], ~BTN[1], clk, wnq);	// ボタン信号からクロック信号を生成
 	
 	assign res = SW[0];			// リセット用のボタン信号
 	

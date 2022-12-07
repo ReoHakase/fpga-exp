@@ -1,6 +1,8 @@
-module m_rs_flipflop(input set,input reset,output q,output nq);
-	assign q=~(set & nq);
-	assign nq=~(reset & q);
+module m_rs_flipflop(set, reset, q, nq);
+  input set,reset;
+  output q,nq;
+	assign q=~(~set & nq);
+	assign nq=~(~reset & q);
 endmodule
 
 
