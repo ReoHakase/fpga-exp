@@ -7,9 +7,15 @@
 *.msf
 *.rbf
 *.qpf
-db/*
-qdb/*
+*/db/*
+*/qdb/*
+*/incremental_db/*
+*/output_files/*
 *.0.0.*
 *.so.0
 helloALInlb
 unit_build
+
+#exception for RTL simulation file
+*/simulation/modelsim/*
+!*/simulation/modelsim/*.vt
