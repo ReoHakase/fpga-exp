@@ -22,7 +22,7 @@ module TopModule(
 
 	// FPGA提供の50[MHz]クロックから分周されるクロックの定義
 	wire clock_chattering; // 1000[Hz]のチャタリング除去用クロック
-	m_prescale(CLK1, 24'd50000, clock_chattering);
+	m_prescale(CLK1, `CLOCK_SCALER_WIDTH'd50000, clock_chattering);
 
 	// インクリメント・リセットボタンの信号の定義
 	wire increment_button;
@@ -41,7 +41,7 @@ module TopModule(
 
 	// FPGA提供の50[MHz]クロックから分周されるクロックの定義
 	wire clock_1hz; // 時計のインクリメント用の1[Hz]のクロック
-	m_prescale(CLK1 && ~is_editing, 24'd50000000, clock_1hz);
+	m_prescale(CLK1 && ~is_editing, `CLOCK_SCALER_WIDTH'd50000000, clock_1hz);
 
 	// 時、分、秒の値を伝えるワイヤの定義
 	wire [`HOUR_WIDTH:0] hour;
