@@ -27,8 +27,8 @@ module TopModule(
 	wire clock_1hz;
 	m_prescale(CLK1, `CLOCK_SCALER_WIDTH'd50000000, clock_1hz); // 50[MHz] / 50 000 000 = 1[Hz]より、クロックを分周する
 	
-	m_counter(clock_1hz, 1'b0, 6'd60, digit1, digit1_countup);
-	m_counter(digit1_countup, 1'b0, 6'd60, digit2, 1'b0);
+	m_counter(clock_1hz, 1'b0, 6'd10, digit1, digit1_countup);
+	m_counter(digit1_countup, 1'b0, 6'd10, digit2);
 	
   // 左の２つの7セグメントにのみ２桁を表示する
 	m_seven_segment(digit1, HEX0);
