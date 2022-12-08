@@ -57,11 +57,11 @@ module TopModule(
 
 	// LEDと7セグメントディスプレイとの接続
 	assign LED={is_editing, 4'b0, reset_button, increment_button, is_hour_editing, is_minute_editing, is_second_editing};
-	m_seven_segment(second % 10, HEX0); // 秒の1桁目
-	m_seven_segment(second / 10, HEX1); // 秒の2桁目
-	m_seven_segment(minute % 10, HEX2); // 分の1桁目
-	m_seven_segment(minute / 10, HEX3); // 分の2桁目
-	m_seven_segment(hour % 10, HEX4); // 時の1桁目
-	m_seven_segment(hour / 10, HEX5); // 時の2桁目
+	m_seven_segment(second % 10, 1'b1, HEX0); // 秒の1桁目
+	m_seven_segment(second / 10, 1'b0, HEX1); // 秒の2桁目
+	m_seven_segment(minute % 10, 1'b1, HEX2); // 分の1桁目
+	m_seven_segment(minute / 10, 1'b0, HEX3); // 分の2桁目
+	m_seven_segment(hour % 10, 1'b1, HEX4); // 時の1桁目
+	m_seven_segment(hour / 10, 1'b0, HEX5); // 時の2桁目
 
 endmodule
