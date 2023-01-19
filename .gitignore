@@ -1,21 +1,32 @@
-*.rpt
-*.cmp
-*.debuginfo
-*.o
-*.so
-*.sof
-*.msf
-*.rbf
-*.qpf
-*/db/*
-*/qdb/*
-*/incremental_db/*
-*/output_files/*
-*.0.0.*
-*.so.0
-helloALInlb
-unit_build
+*.*
+!/*.gitignore
 
-#exception for RTL simulation file
-*/simulation/modelsim/*
-!*/simulation/modelsim/*.vt
+# ignore Quartus generated folders
+/db/
+/incremental_db/
+/simulation/
+/timing/
+/testbench/
+/*_sim/
+
+# project files
+!*.qpf
+!*.qsf
+# source files
+!*.bdf
+!*.vhd
+!*.v
+!*.sv
+# IP core files
+!*.qip
+!*.sip
+!*.bsf
+# SOPC builder project source files
+!*.ptf
+!*.bsf
+# board description
+!**/class.ptf
+# sdc files:
+!*.sdc
+# tcl files:
+!*.tcl
